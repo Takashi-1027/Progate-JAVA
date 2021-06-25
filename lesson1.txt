@@ -253,4 +253,6 @@ System.out.println(name);
 name = "Suzuki";
 System.out.println(name);
 
-
+出力結果
+Sato
+Suzuki
