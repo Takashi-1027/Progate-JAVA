@@ -193,3 +193,17 @@ String text = "Hello World";
 
 ※変数の定義と同時に値を代入(= 変数の初期化)
 
+
+int型変数の計算
+数値が入った変数なら、数値と同様に計算が可能です。数値と変数の計算も、変数同士の計算もできます。
+
+int number1 = 10;
+System.out.println(number1 + 3);
+
+int number2 = 5;
+System.out.println(number1 + number2);
+
+出力結果
+13
+
+15
