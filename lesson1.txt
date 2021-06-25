@@ -238,3 +238,19 @@ system.out.println(greeting + name);
 出力結果
 こんにちは佐藤さん
 こんにちは鈴木さん
+
+
+＃変数の更新
+
+また変数は、中に入っている値を変更することもできます。一度値を代入した変数に、その後再び値を代入すると、
+後で代入した値によって変数の中身が上書きされます。下図では、変数を途中で上書きしたことによって、出力結果が変わっています。
+
+変数の定義
+String name = "Sato";
+System.out.println(name);
+
+変数の中身を上書き
+name = "Suzuki";
+System.out.println(name);
+
+
