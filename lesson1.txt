@@ -66,3 +66,7 @@ System.out.println(3);
 System.out.println(5 + 2);
 System.out.println(8 - 5);
 
+出力結果
+3
+7
+3
