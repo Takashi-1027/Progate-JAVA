@@ -180,3 +180,16 @@ System.out.println(number);
 String name;
 name = "Sato";
 System.out.println(name);
+
+変数の初期化
+下図の「int number = 3;」「String text = "Hello World";」のように、
+変数の値の代入は変数定義と同時に行うことができます。
+変数定義と同時に値を代入することを変数の初期化と呼びます。覚えておきましょう。
+
+int number = 3;
+int numberは変数の定義、= は代入
+
+String text = "Hello World";
+
+※変数の定義と同時に値を代入(= 変数の初期化)
+
