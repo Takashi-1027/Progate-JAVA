@@ -60,3 +60,19 @@ true
 false
 false
 true
+
+
+#大小比較
+
+比較演算子⓶
+
+x < y   yの方が大きい時 true 
+x <= y  yの方が大きいまたは等しい時 true
+
+x > y   yの方が小さい時true
+x >= y  yの方が小さいまたは等しいときtrue 
+
+4 + 2 > 6  --- false
+4 + 2 >= 6 --- true
+8 / 4 < 2  --- false
+8 / 4 <= 2 --- true
