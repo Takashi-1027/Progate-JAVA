@@ -24,3 +24,18 @@ System.out.println(number);
 5.28
 
 
+＃小数同士の計算
+double型も数値ですので、下図のように計算が可能です。
+
+double number1 = 8.5;
+double number2 = 3.4;
+
+System.out.println(number1 + number2);
+System.out.println(number1 - number2);
+
+出力結果
+11.9
+5.1
+
+
+
