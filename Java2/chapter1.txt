@@ -97,7 +97,25 @@ xが20の時    x > 10 && x < 30 ・・・ true
 
 xが35の時    x > 10 && x < 30 ・・・ false
               true      false
-              
+
+
+#「または」
+「または」は||で表現し、「条件1 || 条件2」は、「条件1または条件2のどちらか一方でもtrue」
+であれば結果はtrueになります。具体例を下図で確認してみましょう。
+
+java_image_02.jpgを見る！
+
+xが5の時     x < 10 && x > 30 ・・・ true
+             true      false
+
+xが20の時    x < 10 && x < 30 ・・・ false
+              false    false
+
+xが35の時    x < 10 && x > 30 ・・・ true
+              false    true
+
+
+
 
 
 
