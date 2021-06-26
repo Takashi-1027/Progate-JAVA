@@ -42,3 +42,21 @@ x != y  xとyが等しくない時true
 6 + 2 != 5 --- true
 6 / 3 == 2 --- true
 6 / 3 != 2 --- false
+
+
+# 真偽値を出力しよう
+真偽値も出力することができます。ただし、trueやfalseはダブルクォーテーションで囲んではいけません。注意しましょう。
+比較演算子の結果は真偽値になり、コンソールにも真偽値が出力されます。
+
+System.out.println(true);
+System.out.println(false);
+上記のtrueとfalseはダブルクォーテーションで囲まない
+
+System.out.println(6 + 2 == 5);     ⇒false
+System.out.println(6 + 2 != 5);     ⇒true
+
+出力結果
+true
+false
+false
+true
