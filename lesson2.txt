@@ -79,3 +79,21 @@ System.out.println(5.0 / 2);
 2.5
 
 
+＃int型同士の計算
+先ほどint型同士の計算「5 / 2」は2になってしまうことを学びましたが、それでは下図のようにint型の変数同士の割り算で、
+正確な値を出したいときはどうすればよいでしょうか？
+
+int number1 = 13;
+int number2 = 4;
+
+System.out.println(number1 / number2);
+(number1 / number2)：int型同士の割り算
+
+出力結果
+3 ⇒ 3.25とならない
+
+
+
+
+
+
