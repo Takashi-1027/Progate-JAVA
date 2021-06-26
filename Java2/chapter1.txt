@@ -1,0 +1,106 @@
+#真偽値・比較演算子
+#真偽値とは
+
+早速、真偽値という新しい値を学びます。真偽値には「true」と「false」という2つの値しか存在しません。
+trueは真（正しい）、falseは偽（間違っている）を意味します。
+真偽値のデータ型はboolean型です。true, falseにはダブルクォーテーションは付けないことに注意しましょう。
+
+真偽値
+
+true
+      \
+        boolean型
+      /   ※ bは小文字
+false
+
+※"true"、"false"とするとString型（文字列）になる
+
+boolean型の変数定義
+
+boolean bool = true;
+
+boolean : データ型 
+   bool : 変数名
+   true : 値
+
+
+# 比較演算子
+
+比較演算子とは、値を比較するための記号で、比較した結果は真偽値（trueかfalse）になります。
+「x == y」はxとyが同じかどうかを比較し、同じであればtrue、違っていればfalseとなります。また「x != y」はその逆になります。
+代入の「=」と比較の「==」を混同しないように注意してください。
+
+比較演算子⓵ - 等しいかを調べる
+
+x == y  xとyが等しい時true 
+        xとyが等しくない時false
+
+x != y  xとyが等しくない時true
+        xとyが等しい時false 
+
+6 + 2 == 5 --- false
+6 + 2 != 5 --- true
+6 / 3 == 2 --- true
+6 / 3 != 2 --- false
+
+
+# 真偽値を出力しよう
+真偽値も出力することができます。ただし、trueやfalseはダブルクォーテーションで囲んではいけません。注意しましょう。
+比較演算子の結果は真偽値になり、コンソールにも真偽値が出力されます。
+
+System.out.println(true);
+System.out.println(false);
+上記のtrueとfalseはダブルクォーテーションで囲まない
+
+System.out.println(6 + 2 == 5);     ⇒false
+System.out.println(6 + 2 != 5);     ⇒true
+
+出力結果
+true
+false
+false
+true
+
+
+#大小比較
+
+比較演算子⓶
+
+x < y   yの方が大きい時 true 
+x <= y  yの方が大きいまたは等しい時 true
+
+x > y   yの方が小さい時true
+x >= y  yの方が小さいまたは等しいときtrue 
+
+4 + 2 > 6  --- false
+4 + 2 >= 6 --- true
+8 / 4 < 2  --- false
+8 / 4 <= 2 --- true
+
+
+#「かつ」
+
+論理演算子は「かつ」「または」「~でない」を表現する記号です。
+まずは「かつ」について見てみましょう。
+「かつ」は&&で表現し、「条件1 && 条件2」は「条件1がtrueかつ条件2もtrue」
+であれば結果もtrueになり、どちらか一方でもfalseであれば結果はfalseになります。
+
+論理演算子 - &&(かつ)
+
+java_image_01.jpgを見る
+
+xが5の時     x > 10 && x < 30 ・・・ false
+             false     true
+
+xが20の時    x > 10 && x < 30 ・・・ true
+              true      true
+
+xが35の時    x > 10 && x < 30 ・・・ false
+              true      false
+              
+
+
+
+
+
+
