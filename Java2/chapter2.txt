@@ -1,0 +1,22 @@
+## while文
+# 繰り返し処理
+
+繰り返し処理とは、一定の処理を自動で繰り返し行う処理のことです。
+たとえば、1~100までの数字をコンソールに出力したい場合、
+下図のようにSystem.out.println()を100回書くのは面倒です。
+こういった処理を自動化するのが繰り返し処理です。
+
+System.out.println(1);
+System.out.println(2);
+          :
+          :
+System.out.println(99);
+System.out.println(100);
+
+出力結果
+1
+2
+:
+:
+99
+100
