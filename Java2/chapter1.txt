@@ -371,3 +371,41 @@ switch (x % 2){
 
 奇数です
 -------------------------------------------------------------
+
+
+# default 
+switch文では、どのcaseとも一致しなかったときに実行する処理を、
+defaultに指定することができます。これはif文のelseに似ています。
+
+if (rank == 1){
+  System.out.println("金メダル!");
+} else if (rank == 2){
+  System.out.println("金メダル!");
+} else if (rank == 3){
+  System.out.println("銅メダル!");
+} else {
+  System.out.println("メダルを獲得できませんでした");
+}
+
+switch (rank) {
+  case 1:
+    System.out.println("金メダル!");
+    break;
+  case 2:
+    System.out.println("金メダル!");
+    break;
+  case 3:
+    System.out.println("銅メダル!");
+    break;
+  default:
+    System.out.println("メダルを獲得できませんでした");
+    break;
+}
+
+
+# インデント
+  条件分岐から離れ、インデントについて学習しましょう。
+  インデントとは先頭の字下げのことです。左の図では、
+  どこからどこまでがどのcaseに対応するか、わかりにくいですよね。
+  前後の関係性や入れ子構造を見やすくするため、
+  インデントを整えるのも大事なスキルです。意識していきましょう。
