@@ -233,3 +233,17 @@ System.out.println(names[0]);
 出力結果
 John
 William
+
+
+# 要素の上書きにおける注意点
+
+下図のように、配列では存在しない要素に値を代入することはできないので注意してください。
+
+java_image_11.jpg
+
+String[] names = {"John", "Kate", "Bob"};
+
+names[3] = "Julia";  ←---エラー発生!！
+
+なぜなら、存在しない要素には値を代入できないから
+
