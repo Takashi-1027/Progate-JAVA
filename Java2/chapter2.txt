@@ -212,3 +212,133 @@ System.out.println("私の名前は" + name[0] + "です");
                                   インデックス番号を指定
 出力結果
 私の名前はJohnです。
+
+
+# 配列の要素を上書きする
+
+配列の各要素は変数のようなものです。
+下図のように、特定の要素に値を代入することで、
+要素を上書きすることが可能です。
+
+java_image_10.jpg
+
+配列の上書き
+
+String[] names = {"John", "Kate", "Bob"};
+
+System.out.println(names[0]);
+names[0] = "William"; ← 0番目の要素を上書き
+System.out.println(names[0]);
+
+出力結果
+John
+William
+
+
+# 要素の上書きにおける注意点
+
+下図のように、配列では存在しない要素に値を代入することはできないので注意してください。
+
+java_image_11.jpg
+
+String[] names = {"John", "Kate", "Bob"};
+
+names[3] = "Julia";  ←---エラー発生!！
+
+なぜなら、存在しない要素には値を代入できないから
+
+
+# 配列と繰り返し
+
+配列では、下図のように、それぞれの要素に対し同様の処理を行うことがしばしばあります。
+これは先ほど学んだ繰り返し処理を用いることで容易に実現できます。
+ここからは、配列に対して繰り返し処理を行う方法を見ていきましょう。
+
+java_image_12.jpg
+java_image_13.jpg
+java_image_14.jpg
+java_image_15.jpg
+
+
+# 配列とfor文
+配列namesの要素を全て出力するために、左の図のように書くのは非常に面倒です。
+これをfor文で書いてみると右の図のようになります。このようにすれば配列の要素の値を簡単に一覧表示できるようになります。
+
+java_image_16.jpg
+
+配列の値を出力 - for文を用いない場合
+String[] names = {"John", "Kate", "Bob"};
+System.out.println("Hello" + names[0]);
+System.out.println("Hello" + names[1]);
+System.out.println("Hello" + names[2]);
+
+配列の値を出力 - for文に書き換え
+String[] names = {"John", "Kate", "Bob"};
+
+for (int i = 0; i < 3; i++) {
+  System.out.println("Hello" + names[i]);    ← iが「0, 1, 2」の間、繰り返される
+}
+
+
+# length
+
+配列には、要素の数を数えるlengthという機能が備わっています。
+lengthは、「配列.length」のようにドット（.）でつないで用います。
+lengthを用いれば、先ほどのfor文の条件式「i < 3」を下図のように書き換えることができ、
+配列の要素数を気にする必要がなくなります。
+
+java_image_17.jpg
+
+Steing[] names = {"John", "Kate", "Bob"};
+System.out.println(names.length);
+
+出力結果
+3  ← 配列の要素の数が出力される
+
+lengthを用いた繰り返し処理
+String[] names = {"John", "kate" ,"Bob"}
+for (int i = 0; i < names.length; i++){
+                        ↳3（配列の要素の数）
+  System.out.println("Hello" + names[i]);
+}
+
+
+## 配列用のfor文
+# 拡張for文の文法
+
+for文は配列用に特別な構文（拡張for文）を用意しています。
+これを使えば、先ほどのfor文をよりシンプルに書くことができます。
+拡張for文は下図のように記述します。
+
+拡張for文（配列用の特別なfor文）
+for (データ型 変数名：配列名){
+  繰り返す処理;
+}
+
+
+# 拡張for文のイメージ
+
+拡張for文では、配列の各要素の値を順に代入する変数を用意します。
+具体例とイメージ図を見てみましょう。
+下図の例では、繰り返しの度に、変数nameに配列namesの要素が順に代入されていきます。
+また拡張for文では、自動的に要素の数だけ繰り返しが行われます。2枚の図をしっかり覚えましょう。
+
+java_image_18.jpgを見る！
+
+
+# 普通のfor文との比較
+
+
+普通のfor文と比較し、拡張for文への書き換えができるようになりましょう。
+普通のfor文ではインデックス番号を用いて配列の要素を取得しなければなりませんが、
+拡張for文では変数に配列の要素自体が代入されます。
+拡張for文の方がシンプルに書けることが多いので覚えておきましょう。
+
+java_image_19.jpgを見る
+
+
+# 総合課題
+レッスンの最後に、課題を解いてみましょう。
+整数を要素に持つ配列の中で、「奇数の要素」と「偶数の要素」の和をそれぞれ求め、出力します。
+
+java_image_20.jpgを見る
