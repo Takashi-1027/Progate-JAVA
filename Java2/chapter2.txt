@@ -342,3 +342,6 @@ java_image_19.jpgを見る
 整数を要素に持つ配列の中で、「奇数の要素」と「偶数の要素」の和をそれぞれ求め、出力します。
 
 java_image_20.jpgを見る
+
+
+<img src= "Java2/java_image_20.jpg">
