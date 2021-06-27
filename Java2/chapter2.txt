@@ -212,3 +212,24 @@ System.out.println("私の名前は" + name[0] + "です");
                                   インデックス番号を指定
 出力結果
 私の名前はJohnです。
+
+
+# 配列の要素を上書きする
+
+配列の各要素は変数のようなものです。
+下図のように、特定の要素に値を代入することで、
+要素を上書きすることが可能です。
+
+java_image_10.jpg
+
+配列の上書き
+
+String[] names = {"John", "Kate", "Bob"};
+
+System.out.println(names[0]);
+names[0] = "William"; ← 0番目の要素を上書き
+System.out.println(names[0]);
+
+出力結果
+John
+William
