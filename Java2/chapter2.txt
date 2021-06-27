@@ -247,3 +247,57 @@ names[3] = "Julia";  ←---エラー発生!！
 
 なぜなら、存在しない要素には値を代入できないから
 
+
+# 配列と繰り返し
+
+配列では、下図のように、それぞれの要素に対し同様の処理を行うことがしばしばあります。
+これは先ほど学んだ繰り返し処理を用いることで容易に実現できます。
+ここからは、配列に対して繰り返し処理を行う方法を見ていきましょう。
+
+java_image_12.jpg
+java_image_13.jpg
+java_image_14.jpg
+java_image_15.jpg
+
+
+# 配列とfor文
+配列namesの要素を全て出力するために、左の図のように書くのは非常に面倒です。
+これをfor文で書いてみると右の図のようになります。このようにすれば配列の要素の値を簡単に一覧表示できるようになります。
+
+java_image_16.jpg
+
+配列の値を出力 - for文を用いない場合
+String[] names = {"John", "Kate", "Bob"};
+System.out.println("Hello" + names[0]);
+System.out.println("Hello" + names[1]);
+System.out.println("Hello" + names[2]);
+
+配列の値を出力 - for文に書き換え
+String[] names = {"John", "Kate", "Bob"};
+
+for (int i = 0; i < 3; i++) {
+  System.out.println("Hello" + names[i]);    ← iが「0, 1, 2」の間、繰り返される
+}
+
+
+# length
+
+配列には、要素の数を数えるlengthという機能が備わっています。
+lengthは、「配列.length」のようにドット（.）でつないで用います。
+lengthを用いれば、先ほどのfor文の条件式「i < 3」を下図のように書き換えることができ、
+配列の要素数を気にする必要がなくなります。
+
+java_image_17.jpg
+
+Steing[] names = {"John", "Kate", "Bob"};
+System.out.println(names.length);
+
+出力結果
+3  ← 配列の要素の数が出力される
+
+lengthを用いた繰り返し処理
+String[] names = {"John", "kate" ,"Bob"}
+for (int i = 0; i < names.length; i++){
+                        ↳3（配列の要素の数）
+  System.out.println("Hello" + names[i]);
+}
