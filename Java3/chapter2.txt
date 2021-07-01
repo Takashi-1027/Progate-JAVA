@@ -34,7 +34,25 @@ Java3_image_35.jpgをみよう！
 Java3_image_38.jpgを見よう！
 
 # コンソールへの入力とScanner
+  これまではコンソールに値を「出力」してきましたが、実は左の図のようにコンソールに値を「入力」し、その値をプログラム内で使うこともできます。
+  コンソールへの入力を受け取るにはScannerというライブラリを用います。Scannerは「import java.util.Scanner」と読み込みます。
+  ライブラリは、Googleで検索すれば使い方がわかりますので、覚える必要はありません。
 
 Java3_image_39-1.jpgを見よう！
 Java3_image_39-2.jpgを見よう！
 
+# Scannerで文字列を受け取る
+  Scannerの使い方を見てみましょう。まずScannerを初期化しscannerという変数にいれています。
+  詳しくはまだ知らなくて大丈夫ですが、Scannerではこの初期化したものを代入した変数を使ってメソッドを呼び出します。
+  scanner.next()とすると（Scanner.next()ではない）、コンソールに入力された文字列を受け取ることができます。
+
+Java3_image_40.jpg
+
+
+# Scannerの処理の流れ
+  Scannerの処理の流れを確認しましょう。scanner.next()が呼ばれると、一旦処理が中断しコンソールに値が入力されるのを待ちます。
+  左の図では、コンソールに入力された値をscanner.next()が受け取り、変数nameに代入しています。
+（図中のSystem.out.printは、改行せずに値を出力する命令です）
+
+Java3_image_41-1.jpg
+Java3_image_41-2.jpg
