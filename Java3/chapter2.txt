@@ -56,3 +56,14 @@ Java3_image_40.jpg
 
 Java3_image_41-1.jpg
 Java3_image_41-2.jpg
+
+## 入力を受け取ろう(2)
+# 数値の入力を受け取る
+  Scannerを用いて、整数と小数を受け取る方法は下図です。
+  整数を受け取るメソッドはnextIntメソッド、
+  小数を受け取るメソッドはnextDoubleメソッドです。
+
+Java3_image_42-1.jpg
+Java3_image_42-2.jpg
+Java3_image_42-3.jpg
+
