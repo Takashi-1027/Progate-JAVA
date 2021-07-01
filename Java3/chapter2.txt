@@ -33,3 +33,8 @@ Java3_image_35.jpgをみよう！
 
 Java3_image_38.jpgを見よう！
 
+# コンソールへの入力とScanner
+
+Java3_image_39-1.jpgを見よう！
+Java3_image_39-2.jpgを見よう！
+
