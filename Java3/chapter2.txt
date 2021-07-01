@@ -23,4 +23,4 @@ Java3_image_35.jpgをみよう！
   演習では、引数の小数点以下を四捨五入して返すroundメソッドを使います。
   これはdouble型の引数を渡し、Math.round(引数)のように使います。
 
-  
+  Java3_image_37.jpgを見よう！
