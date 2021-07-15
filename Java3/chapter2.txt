@@ -68,4 +68,3 @@ Java3_image_42-2.jpg
 Java3_image_42-3.jpg
 
 Java道場でしっかりとJavaの知識を深めていこう！
-
